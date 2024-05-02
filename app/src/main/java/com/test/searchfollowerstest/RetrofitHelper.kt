@@ -7,10 +7,11 @@ object RetrofitHelper {
 
     val baseUrl = "https://api.github.com/"
 
-    fun getInstance(): Retrofit {
-        return Retrofit.Builder()
+    val api : FollowersApi by lazy {
+        Retrofit.Builder()
             .baseUrl(baseUrl)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
+            .create(FollowersApi::class.java)
     }
 }

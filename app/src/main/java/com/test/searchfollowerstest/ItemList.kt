@@ -1,5 +1,5 @@
 package com.test.searchfollowerstest
 
 data class ItemList(
-    val results: List<User>
+    val items: List<User>
 )

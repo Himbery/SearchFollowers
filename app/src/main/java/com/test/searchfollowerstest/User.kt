@@ -1,8 +1,8 @@
 package com.test.searchfollowerstest
 
 data class User (
-    val name: String,
-    val image: String,
-    val followersUrl: String,
-    val followers: Int
+    val login: String,
+    val avatar_url: String,
+    val followers_url: String,
+    val repos_url: String
 )
